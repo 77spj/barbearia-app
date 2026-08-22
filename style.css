@@ -1,3 +1,64 @@
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #form-agendamento {
-    display:none
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+#form-agendamento.ativo {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+#btn-agendamento {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+#btn-agendamento.ativo {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+#btn-horarios {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+#btn-horarios.ativo {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+#btn-voltar {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+#btn-voltar.ativo {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }

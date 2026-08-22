@@ -2,23 +2,26 @@
 <html lang = "pt-BR">
     <head>
         <title>FP Barbearia</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
         <h1>Seja bem-vindo à FP Barbearia</h1>
-        <button id="btn-agendamento">Faça seu agendamento</button>
+        <button id="btn-voltar">Voltar</button>
+        <button id="btn-agendamento" class="ativo">Faça seu agendamento</button>
         
         <form id="form-agendamento">
             
             <label for="nome">Digite seu nome:</label>
             <input type="text" id="nome" name="nome" required>
             
-            <label for="nunero">Digite seu telefone:</label>
+            <label for="numero">Digite seu telefone:</label>
             <input type="tel" id="numero" name="numero" required>
         
         </form>
-
+        <button id="btn-horarios">Ver horários disponíveis</button>
+        
         <script src="script.js"></script>
     </body>
 </html>
